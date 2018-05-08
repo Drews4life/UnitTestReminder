@@ -31,9 +31,9 @@ app.get("/users", (req, res) => {
 });
 
 
-if(!module.parent){ 
-    app.listen(port); 
-}
+
+app.listen(port); 
+
 
 
 module.exports.app = app;

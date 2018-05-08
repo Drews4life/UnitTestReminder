@@ -29,7 +29,7 @@ describe("App", () => {
         var email = "smth@gg.com";
         var password = "getpranked";
 
-        app.handleSignUp();
+        app.handleSignUp(email, password);
         expect(db.saveUser).toHaveBeenCalled({email, password});
         done();
 
